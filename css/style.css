@@ -1,0 +1,38 @@
+.page-header {
+    background-color: #bdbdbd;
+}
+
+.page-title {
+    color: #f44336;
+}
+
+.section-title {
+    color: #3f51b5;
+}
+
+.section-text {
+    color: #ff5722;
+}
+
+.page-footer {
+    background-color: #212121;
+}
+
+.copyright-text {
+    color: #ffffff;
+}
+
+.club-list {
+    list-style-type: none;
+}
+.club-list .title {
+    color: #4caf50;
+}
+
+.club-list .text {
+    color: #009688;
+}
+
+.club-list .link {
+    color: #ffc107;
+}   
