@@ -56,3 +56,13 @@
 .club-list .link:active{
     color: #ff1744;
 }
+
+.page-nav .link:hover,
+.page-nav .link:focus {
+    color: #18ffff;
+}
+
+.club-list .link:hover,
+.club-list .link:focus {
+    color: #f57f17;
+}
