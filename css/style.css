@@ -1,3 +1,10 @@
+body {
+    font-family: "Helvetica Neue",
+        "Roboto",
+        "Verdana",
+        sans-serif;
+}
+
 .page-header {
     background-color: #bdbdbd;
 }
@@ -5,10 +12,15 @@
 .page-title {
     color: #f44336;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .section-title {
     color: #3f51b5;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .section-text {
@@ -28,6 +40,7 @@
 }
 .club-list .title {
     color: #4caf50;
+    font-size: 16px;
 }
 
 .club-list .text {
@@ -36,6 +49,8 @@
 
 .club-list .link {
     color: #ffc107;
+    font-size: 14px;
+    font-weight: 500;
 }   
 
 .benefits > li {
