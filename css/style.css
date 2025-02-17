@@ -1,0 +1,68 @@
+.page-header {
+    background-color: #bdbdbd;
+}
+
+.page-title {
+    color: #f44336;
+}
+
+.section-title {
+    color: #3f51b5;
+}
+
+.section-text {
+    color: #ff5722;
+}
+
+.page-footer {
+    background-color: #212121;
+}
+
+.copyright-text {
+    color: #ffffff;
+}
+
+.club-list {
+    list-style-type: none;
+}
+.club-list .title {
+    color: #4caf50;
+}
+
+.club-list .text {
+    color: #009688;
+}
+
+.club-list .link {
+    color: #ffc107;
+}   
+
+.benefits > li {
+    color: #d500f9;
+}
+
+.page-nav .link:hover {
+    color: #18ffff;
+}
+
+.club-list .link:hover {
+    color: #f57f17;
+}
+
+.page-nav .link:active {
+    color: #212121;
+}
+
+.club-list .link:active{
+    color: #ff1744;
+}
+
+.page-nav .link:hover,
+.page-nav .link:focus {
+    color: #18ffff;
+}
+
+.club-list .link:hover,
+.club-list .link:focus {
+    color: #f57f17;
+}
