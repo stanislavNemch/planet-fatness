@@ -1,7 +1,5 @@
 body {
-    font-family: "Helvetica Neue",
-        "Roboto",
-        "Verdana",
+    font-family: "Poppins",
         sans-serif;
 }
 
@@ -11,20 +9,30 @@ body {
 
 .page-title {
     color: #f44336;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Oswald",
+        sans-serif;
     font-size: 24px;
     font-weight: 500;
     font-style: italic;
+    text-align: center;
+    line-height: 1.333;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #212121;
 }
 
 .section-title {
+    font-family: "Oswald", sans-serif;
     color: #3f51b5;
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.333;
+    letter-spacing: 1px;
 }
 
 .section-text {
     color: #ff5722;
+    line-height: 1.5;
+    text-indent: 24px;
 }
 
 .page-footer {
@@ -39,8 +47,11 @@ body {
     list-style-type: none;
 }
 .club-list .title {
+    font-family: "Oswald", sans-serif;
     color: #4caf50;
     font-size: 16px;
+    text-align: center;
+    line-height: 1.333;
 }
 
 .club-list .text {
@@ -51,18 +62,18 @@ body {
     color: #ffc107;
     font-size: 14px;
     font-weight: 500;
+    text-decoration: none;
 }   
 
 .benefits > li {
     color: #d500f9;
 }
 
-.page-nav .link:hover {
-    color: #18ffff;
-}
-
-.club-list .link:hover {
-    color: #f57f17;
+.page-nav .link {
+    color: #00bcd4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .page-nav .link:active {
@@ -81,4 +92,18 @@ body {
 .club-list .link:hover,
 .club-list .link:focus {
     color: #f57f17;
+    text-decoration: underline;
+}
+
+.downloads .link {
+    text-decoration: none;
+}
+
+.downloads .plan-name {
+    color: #ff1744;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+    text-decoration: underline;
 }
