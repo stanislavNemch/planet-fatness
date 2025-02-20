@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500&display=swap"
@@ -17,42 +18,46 @@
 <body>
 
     <header class="page-header">
-        <a href="/">
-            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04pflogo.svg"
-                alt="Planet Fatness logo" width="40" height="40">
-        </a>
-        <nav>
-            <ul class="page-nav">
-                <li><a href="#clubs" class="link">Our Clubs</a></li>
-                <li><a href="#benefits" class="link">PF Benefits</a></li>
-                <li><a href="#programs" class="link">Tips and Programs</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="/">
+                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04pflogo.svg"
+                    alt="Planet Fatness logo" width="40" height="40">
+            </a>
+            <nav>
+                <ul class="page-nav">
+                    <li><a href="#clubs" class="link">Our Clubs</a></li>
+                    <li><a href="#benefits" class="link">PF Benefits</a></li>
+                    <li><a href="#programs" class="link">Tips and Programs</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1 class="page-title">Planet Fatness</h1>
-        <p>
-            Healthy food is delicious. Doing sport is enjoyable. You just need to start -
-            people said. Nonsense! - I thought. To me, a 19-year-old guy, overweight and
-            depressed, who ate tons of junk food to seize the stress, those
-            healthy-life-gurus sounded like aliens coming from another planet. On their
-            planet, it must have sounded right. On my planet, eating pizza was OK and
-            jogging was exhausting. 12 years later, after I shed almost 100 pounds and
-            completely changed my diet, I still believe we WERE on different planets. The
-            thing is that once I escaped.
-        </p>
-        <p>
-            Now I'm a coach with 7+ years of experience who founded the chain of sport
-            clubs each having a fitness bar and assistance of psychologists, and
-            dietitians. I'm sure that nothing will work until you know where you are and
-            where you go. Possibly, you are now on the planet Fatness and want to escape
-            it. Here I am to show you the way out. The gym itself is the spacecraft for
-            you to reach a happy new life, with its fitness bars to adapt your body to new
-            conditions and with friendly crew to motivate you and help on your way.
-        </p>
+        <div class="container">
+            <h1 class="page-title">Planet Fatness</h1>
+            <p>
+                Healthy food is delicious. Doing sport is enjoyable. You just need to start -
+                people said. Nonsense! - I thought. To me, a 19-year-old guy, overweight and
+                depressed, who ate tons of junk food to seize the stress, those
+                healthy-life-gurus sounded like aliens coming from another planet. On their
+                planet, it must have sounded right. On my planet, eating pizza was OK and
+                jogging was exhausting. 12 years later, after I shed almost 100 pounds and
+                completely changed my diet, I still believe we WERE on different planets. The
+                thing is that once I escaped.
+            </p>
+            <p>
+                Now I'm a coach with 7+ years of experience who founded the chain of sport
+                clubs each having a fitness bar and assistance of psychologists, and
+                dietitians. I'm sure that nothing will work until you know where you are and
+                where you go. Possibly, you are now on the planet Fatness and want to escape
+                it. Here I am to show you the way out. The gym itself is the spacecraft for
+                you to reach a happy new life, with its fitness bars to adapt your body to new
+                conditions and with friendly crew to motivate you and help on your way.
+            </p>
+        </div>
 
-        <section>
+        <section class="section container">
             <h2 id="clubs" class="section-title">Find us near you</h2>
             <p class="section-text">
                 Get healthy, feel strong, and be happy! With 50+ classes on the menu,
@@ -65,7 +70,7 @@
                 operating.
             </p>
             <ul class="club-list">
-                <li>
+                <li class="item">
                     <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B031.jpg"
                         alt="PF Power Zone. A modern gym equipped with treadmills." width="320">
                     <h3 class="title">PF Power Zone</h3>
@@ -78,7 +83,7 @@
                         Open in Google Maps
                     </a>
                 </li>
-                <li>
+                <li class="item">
                     <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B032.jpg"
                         alt="PF Fit and Fast. A gym with indoor bikes behind a glass door." width="320">
                     <h3 class="title">PF Fit and Fast</h3>
@@ -91,7 +96,7 @@
                         Open in Google Maps
                     </a>
                 </li>
-                <li>
+                <li class="item">
                     <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B033.jpg"
                         alt="PF Body Sculpting. A studio with fitness balls and trx straps." width="320">
                     <h3 class="title">PF Body Sculpting</h3>
@@ -107,7 +112,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="section container">
             <h2 id="benefits" class="section-title">Why choose Planet Fatness?</h2>
             <p class="section-text">
                 We're bringing accessible, on-trend fitness to everyone! We are more than just
@@ -151,7 +156,7 @@
             <button type="button">Request a callback</button>
         </section>
 
-        <section>
+        <section class="section container">
             <h2 id="programs" class="section-title">How to stop doubting and start exercising regularly</h2>
             <p class="section-text">
                 Thousands of people dream about having a nice body. They start doing sport,
@@ -187,31 +192,33 @@
     </main>
 
     <footer class="page-footer">
-        <ul style="list-style-type: none;">
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
-                        alt="Instagram" width="32" height="32">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
-                        alt="Facebook" width="32" height="32">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/" target="_blank"><img
-                        src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
-                        alt="YouTube" width="32" height="32">
-                </a>
-            </li>
-        </ul>
-        <p class="copyright-text">
-            &copy; 2023 ARST Planet Fatness, Ltd. All rights reserved. Unless otherwise indicated,
-            all materials on the page are copyrighted by ARST Planet Fatness, Limited. All rights
-            reserved. No part of this page, either text or image may be used for any purpose.
-        </p>
+        <div class="container">
+            <ul style="list-style-type: none;">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
+                            alt="Instagram" width="32" height="32">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
+                            alt="Facebook" width="32" height="32">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
+                            alt="YouTube" width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright-text">
+                &copy; 2023 ARST Planet Fatness, Ltd. All rights reserved. Unless otherwise indicated,
+                all materials on the page are copyrighted by ARST Planet Fatness, Limited. All rights
+                reserved. No part of this page, either text or image may be used for any purpose.
+            </p>
+        </div>
     </footer>
 
 </body>

@@ -1,116 +1,164 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Poppins",
-        sans-serif;
-    font-size: 14px;
-    color: #212121;
-    background-color: #fafafa;
-    line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #212121;
+  background-color: #fafafa;
+  line-height: 1.5;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    color: #212121;
-    line-height: 1.333;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #212121;
+  line-height: 1.333;
+  margin: 0;
 }
 
-ul, ol {
-    list-style-type: none;
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .page-header {
-    background-color: #bdbdbd;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
 }
 
 .page-title {
-    color: #f44336;
-    font-size: 24px;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px #212121;
+  color: #f44336;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px #212121;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.section {
+  border-top: 2px dashed #212121;
 }
 
 .section-title {
-    color: #3f51b5;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-align: center;
+  color: #3f51b5;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .section-text {
-    color: #ff5722;
-    line-height: 1.5;
-    text-indent: 24px;
+  color: #ff5722;
+  line-height: 1.5;
+  text-indent: 24px;
 }
 
 .page-footer {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 .copyright-text {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .club-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 .club-list .title {
-    color: #4caf50;
-    font-size: 16px;
-    text-align: center;
+  color: #4caf50;
+  font-size: 16px;
+  text-align: center;
+}
+
+.club-list .item {
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .club-list .text {
-    color: #009688;
+  color: #009688;
 }
 
 .club-list .link {
-    color: #ffc107;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-}   
+  color: #ffc107;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
 
 .benefits > li {
-    color: #d500f9;
+  color: #d500f9;
+}
+
+.page-nav {
+  padding: 0;
 }
 
 .page-nav .link {
-    color: #00bcd4;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
+  color: #00bcd4;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .page-nav .link:active {
-    color: #212121;
+  color: #212121;
 }
 
-.club-list .link:active{
-    color: #ff1744;
+.club-list .link:active {
+  color: #ff1744;
 }
 
 .page-nav .link:hover,
 .page-nav .link:focus {
-    color: #18ffff;
+  color: #18ffff;
 }
 
 .club-list .link:hover,
 .club-list .link:focus {
-    color: #f57f17;
-    text-decoration: underline;
+  color: #f57f17;
+  text-decoration: underline;
 }
 
 .downloads .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .downloads .plan-name {
-    color: #ff1744;
+  color: #ff1744;
 }
 
 .downloads .link:hover,
 .downloads .link:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
