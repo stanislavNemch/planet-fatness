@@ -5,12 +5,19 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: #212121;
-  background-color: #fafafa;
-  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #212121;
+  font-size: 14px;
+  background-color: #ffffff;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
@@ -19,27 +26,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  color: #212121;
-  line-height: 1.333;
   margin: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 p {
   margin: 0;
 }
 
-ul,
-ol {
-  list-style-type: none;
-  padding: 0;
+ul {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 img {
   display: block;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .container {
@@ -49,116 +53,156 @@ img {
 }
 
 .page-header {
+  margin-bottom: 20px;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #e0e0e0;
-  margin-bottom: 20px;
 }
 
-.page-title {
-  color: #f44336;
-  font-size: 24px;
-  font-style: italic;
-  text-align: center;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 4px #212121;
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-
-.section {
-  border-top: 2px dashed #212121;
-}
-
-.section-title {
-  color: #3f51b5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.section-text {
-  color: #ff5722;
-  line-height: 1.5;
-  text-indent: 24px;
-}
-
-.page-footer {
-  background-color: #212121;
-}
-
-.copyright-text {
-  color: #ffffff;
-}
-
-.club-list {
-  list-style-type: none;
-}
-.club-list .title {
-  color: #4caf50;
-  font-size: 16px;
-  text-align: center;
-}
-
-.club-list .item {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.club-list .text {
-  color: #009688;
-}
-
-.club-list .link {
-  color: #ffc107;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.benefits > li {
-  color: #d500f9;
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-nav {
-  padding: 0;
+  display: flex;
+  gap: 8px;
 }
 
 .page-nav .link {
-  color: #00bcd4;
+  display: block;
+  padding: 4px 8px;
+  color: #03a9f4;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 14px;
-}
-
-.page-nav .link:active {
-  color: #212121;
-}
-
-.club-list .link:active {
-  color: #ff1744;
+  text-transform: uppercase;
 }
 
 .page-nav .link:hover,
 .page-nav .link:focus {
-  color: #18ffff;
+  color: #0288d1;
+}
+
+.page-nav .link:active {
+  color: #f44336;
+}
+
+.page-title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.333;
+  letter-spacing: 3px;
+}
+
+.section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px dashed #212121;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.333;
+  letter-spacing: 1px;
+}
+
+.club-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.club-list .item {
+  flex-basis: calc((100% - 24px) / 3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.club-list .title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.333;
+}
+
+.club-list .link {
+  color: #03a9f4;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .club-list .link:hover,
 .club-list .link:focus {
-  color: #f57f17;
-  text-decoration: underline;
+  color: #0288d1;
+}
+
+.club-list .link:active {
+  color: #f44336;
 }
 
 .downloads .link {
+  color: #03a9f4;
   text-decoration: none;
-}
-
-.downloads .plan-name {
-  color: #ff1744;
 }
 
 .downloads .link:hover,
 .downloads .link:focus {
+  color: #0288d1;
   text-decoration: underline;
+}
+
+.downloads .link:active {
+  color: #f44336;
+}
+
+.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #212121;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright-text {
+  color: #ffffff;
+  flex-basis: 300px;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits .item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
 }
