@@ -146,6 +146,14 @@ img {
   color: #f44336;
 }
 
+.downloads {
+  margin-top: 20px;
+}
+
+.downloads .item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .downloads .link {
   color: #03a9f4;
   text-decoration: none;
@@ -198,11 +206,4 @@ img {
 
 .benefits .item {
   flex-basis: calc((100% - 32px) / 3);
-}
-
-.downloads {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 20px;
 }
