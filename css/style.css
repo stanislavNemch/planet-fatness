@@ -69,23 +69,27 @@ img {
 }
 
 .hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-bottom: 24px;
   font-size: 32px;
-  text-align: center;
   line-height: 1.333;
   letter-spacing: 3px;
 }
 
-.hero-title::before {
-  width: 100px;
-  height: 2px;
-  background-color: #fff;
-}
-
+.hero-title::before,
 .hero-title::after {
   width: 100px;
   height: 2px;
   background-color: #fff;
+  content: "";
+}
+
+.hero-title:hover::before,
+.hero-title:hover::after {
+  background-color: #03a9f4;
 }
 
 .page-header {
@@ -122,14 +126,6 @@ img {
 
 .page-nav .link:active {
   color: #f44336;
-}
-
-.page-title {
-  margin-bottom: 24px;
-  font-size: 32px;
-  text-align: center;
-  line-height: 1.333;
-  letter-spacing: 3px;
 }
 
 .section {
