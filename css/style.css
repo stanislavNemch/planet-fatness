@@ -115,16 +115,14 @@ img {
 }
 
 .page-nav .link {
-  transition-property: color, background-color;
   display: block;
   padding: 4px 8px;
   color: #03a9f4;
   text-decoration: none;
   font-size: 14px;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0ms, 150ms;
   text-transform: uppercase;
+  transition: color 150ms ease-in-out 0ms,
+    background-color 150ms ease-in-out 150ms;
 }
 
 .page-nav .link:hover,
