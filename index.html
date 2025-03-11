@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
     <meta name="description" content="Planet Fatness description meta tag content" />
     <title>Planet Fatness is the place for beginners and pros!</title>
 </head>
@@ -32,7 +33,7 @@
     </header>
 
     <main>
-        <button type="button" class="manager-chat-btn">Contact manager</button>
+        <button type="button" class="manager-chat-btn" onclick="showForm()">Contact manager</button>
         <div class="container">
             <div class="hero">
                 <h1 class="hero-title">Planet Fatness</h1>
@@ -151,15 +152,24 @@
             <p>Do you want to know more? Contact us!</p>
 
             <address>
-                Call us: <a href="tel:+070174069900">+070174069900</a><br />
-                Email us: <a href="mailto:fatnessescape@doit.com">fatnessescape@doit.com</a><br />
-                You may also want to visit us:<br />
-                Lorem Foundation<br />
-                332E Jacked Ave<br />
-                Mountain View, CA 228322<br />
-                USA
+                <div class="modal-overlay" id="modal-overlay">
+                    <div class="modal">
+                        <div style="position: absolute; top: 10px; right: 10px; cursor: pointer;" onclick="hideForm()">X
+                        </div>
+                        <ul class="contacts">
+                            <li>Call us: <a href="tel:+070174069900">+070174069900</a></li>
+                            <li>Email us: <a href="mailto:fatnessescape@doit.com">fatnessescape@doit.com</a></li>
+                            <li>You may also want to visit us:<br />
+                                Lorem Foundation<br />
+                                332E Jacked Ave<br />
+                                Mountain View, CA 228322<br />
+                                USA
+                            </li>
+                            <li><button type="button">Request a callback</button></li>
+                        </ul>
+                    </div>
+                </div>
             </address>
-            <button type="button">Request a callback</button>
         </section>
 
         <section class="section container">
@@ -226,7 +236,7 @@
             </p>
         </div>
     </footer>
-
+    <div class="overlay"></div>
 </body>
 
 </html>
